@@ -2,7 +2,7 @@
 This extension gives you the option to shutdown. reboot, suspend and hibernate your pc.
 It also have an option to change the icon of the options to fit your theme :D
 
-#Dependencies
+# Dependencies
 - Systemd
 
 
