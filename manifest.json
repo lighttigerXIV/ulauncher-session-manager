@@ -1,0 +1,29 @@
+{
+    "required_api_version": "^2.0.0",
+    "name": "Session Manager",
+    "description": "An extension that offers you session options",
+    "developer_name": "lighttigerXIV",
+    "icon": "images/icon.png",
+    "options": {
+        "query_debounce": 0.05
+    },
+    "preferences": [
+        {
+            "id": "kw",
+            "type": "keyword",
+            "name": "Session Manager",
+            "default_value": "sm"
+        },
+        {
+            "id": "icon",
+            "type": "select",
+            "name": "Icon style",
+            "default_value": "color",
+            "options": [
+                {"text": "Colorfull icon", "value": "color"},
+                {"text": "Black icon", "value": "black"},
+                {"text": "White icon", "value": "white"}
+            ]
+        }
+    ]
+}
