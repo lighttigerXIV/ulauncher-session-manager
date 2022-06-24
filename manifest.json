@@ -20,7 +20,7 @@
             "name": "Icon style",
             "default_value": "color",
             "options": [
-                {"text": "Colorfull icon", "value": "color"},
+                {"text": "Colorful icon", "value": "color"},
                 {"text": "Black icon", "value": "black"},
                 {"text": "White icon", "value": "white"}
             ]
