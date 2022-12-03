@@ -24,6 +24,16 @@
                 {"text": "Black icon", "value": "black"},
                 {"text": "White icon", "value": "white"}
             ]
+        },
+        {
+            "id": "desktop-environment",
+            "type": "select",
+            "name": "Desktop Environment",
+            "default_value": "gnome",
+            "options": [
+                {"text": "Gnome", "value": "gnome"},
+                {"text": "KDE", "value": "kde"}
+            ]
         }
     ]
 }

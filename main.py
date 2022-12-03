@@ -27,13 +27,11 @@ class KeywordQueryEventListener(EventListener):
         options = []
 
 
-        for i in range(4):
+        for i in range(5):
 
             data = { "option": i }
 
             iconStyle = extension.preferences["icon"]
-
-            print(iconStyle)
 
             if iconStyle == "color": optionIcon = "images/icon.png"
             if iconStyle == "black": optionIcon = "images/icon-black.png"
@@ -46,6 +44,8 @@ class KeywordQueryEventListener(EventListener):
             if i == 2: optionName = "Suspend"
 
             if i == 3: optionName = "Hibernate"
+
+            if i == 4: optionName = "Logout"
 
 
             options.append(ExtensionResultItem(icon=optionIcon,
@@ -68,6 +68,12 @@ class ExecuteSession(EventListener):
         if option == 1: command = "systemctl reboot"
         if option == 2: command = "systemctl suspend"
         if option == 3: command = "systemctl hibernate"
+        if option == 4:
+
+            desktopEnvironment = extension.preferences["desktop-environment"]
+
+            if(desktopEnvironment == "gnome"): command = "gnome-session-quit --no-prompt"
+            if(desktopEnvironment == "kde"): command = "qdbus org.kde.ksmserver /KSMServer logout 0 0 1"
 
         subprocess.run( [command], shell=True )
 
