@@ -32,7 +32,8 @@
             "default_value": "gnome",
             "options": [
                 {"text": "Gnome", "value": "gnome"},
-                {"text": "KDE", "value": "kde"}
+                {"text": "KDE", "value": "kde"},
+                {"text": "Sway", "value": "sway"}
             ]
         }
     ]

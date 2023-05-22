@@ -74,6 +74,7 @@ class ExecuteSession(EventListener):
 
             if(desktopEnvironment == "gnome"): command = "gnome-session-quit --no-prompt"
             if(desktopEnvironment == "kde"): command = "qdbus org.kde.ksmserver /KSMServer logout 0 0 1"
+            if(desktopEnvironment == "sway"): command = "swaymsg exit"
 
         subprocess.run( [command], shell=True )
 
