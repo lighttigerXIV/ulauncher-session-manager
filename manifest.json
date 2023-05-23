@@ -32,8 +32,16 @@
             "default_value": "gnome",
             "options": [
                 {"text": "Gnome", "value": "gnome"},
-                {"text": "KDE", "value": "kde"}
+                {"text": "KDE", "value": "kde"},
+                {"text": "Other", "value": "other"}
             ]
+        },
+        {
+            "id": "other_logout",
+            "type": "text",
+            "name": "Other Logout",
+            "description": "It will run this command on logout if other in Desktop Environment is selected",
+            "default_value": ""
         }
     ]
 }
