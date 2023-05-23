@@ -72,9 +72,9 @@ class ExecuteSession(EventListener):
 
             desktopEnvironment = extension.preferences["desktop-environment"]
 
-            if(desktopEnvironment == "gnome"): command = "gnome-session-quit --no-prompt"
-            if(desktopEnvironment == "kde"): command = "qdbus org.kde.ksmserver /KSMServer logout 0 0 1"
-            if(desktopEnvironment == "sway"): command = "swaymsg exit"
+            if desktopEnvironment == "gnome": command = "gnome-session-quit --no-prompt"
+            if desktopEnvironment == "kde": command = "qdbus org.kde.ksmserver /KSMServer logout 0 0 1"
+            if desktopEnvironment == "other": command = extension.preferences["other_logout"]
 
         subprocess.run( [command], shell=True )
 

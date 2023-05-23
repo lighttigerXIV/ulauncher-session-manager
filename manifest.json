@@ -33,8 +33,15 @@
             "options": [
                 {"text": "Gnome", "value": "gnome"},
                 {"text": "KDE", "value": "kde"},
-                {"text": "Sway", "value": "sway"}
+                {"text": "Other", "value": "other"}
             ]
+        },
+        {
+            "id": "other_logout",
+            "type": "text",
+            "name": "Other Logout",
+            "description": "It will run this command on logout if other in Desktop Environment is selected",
+            "default_value": ""
         }
     ]
 }
